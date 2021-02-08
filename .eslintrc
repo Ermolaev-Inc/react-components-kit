@@ -1,0 +1,11 @@
+{
+  "env": {
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-use-before-define": "off"
+  },
+  "extends": ["jesse", "plugin:@typescript-eslint/recommended"]
+}
