@@ -1,5 +1,5 @@
 ![Full HD](https://user-images.githubusercontent.com/57585370/107759717-8289ab80-6d4a-11eb-989b-76848cbb5f15.png)
-___
+
 <div align="center">
 
 ![Downloads](https://img.shields.io/npm/dm/erck?style=for-the-badge)
