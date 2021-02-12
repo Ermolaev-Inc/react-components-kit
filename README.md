@@ -2,6 +2,7 @@
 ___
 <div align="center">
 📦 Beautiful components for your react app
+<br />
 
 ![Downloads](https://img.shields.io/npm/dm/erck?style=for-the-badge)
 ![Version](https://img.shields.io/npm/v/erck?style=for-the-badge)
