@@ -30,7 +30,7 @@ export const Home: React.FC = () => {
 Soon
 
 ## Components
-Soon
+- [Input](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Input)
 
 ## License
 This project is licensed under the terms of the [MIT license](https://github.com/Ermolaev-Inc/react-components-kit/blob/master/LICENSE)
