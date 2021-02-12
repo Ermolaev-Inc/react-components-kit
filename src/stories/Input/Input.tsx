@@ -5,11 +5,15 @@ export interface InputProps {
   type: "text" | "password";
   placeholder: string;
   textColor: string;
+  textWeight: number;
+  placeholderWeight: number;
   borderColor: string;
   borderFocusColor: string;
 }
 
 const InputStyle = styled.input<InputProps>`
+  font-family: Roboto;
+  font-weight: ${props => props.textWeight};
   padding-bottom: 5px;
   background-color: transparent;
   border-bottom-width: 4px;
@@ -26,7 +30,7 @@ const InputStyle = styled.input<InputProps>`
   ::placeholder {
     color: ${props => props.borderColor};
     font-size: 24px;
-    font-weight: 500;
+    font-weight: ${props => props.placeholderWeight};
   }
   :focus {
     border-bottom-color: ${props => props.borderFocusColor};
@@ -40,6 +44,8 @@ export const Input: React.FC<Partial<InputProps>> = ({
   type = "text",
   placeholder = "Placeholder",
   textColor = "#000000",
+  textWeight = 400,
+  placeholderWeight = 400,
   borderColor = "#e6e6e6",
   borderFocusColor = "#79c7ff"
 }) => {
@@ -47,6 +53,8 @@ export const Input: React.FC<Partial<InputProps>> = ({
     type={type}
     placeholder={placeholder}
     textColor={textColor}
+    textWeight={textWeight}
+    placeholderWeight={placeholderWeight}
     borderColor={borderColor}
     borderFocusColor={borderFocusColor}
   />;
