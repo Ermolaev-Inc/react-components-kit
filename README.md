@@ -1,4 +1,4 @@
-![Full HD](https://user-images.githubusercontent.com/57585370/107759717-8289ab80-6d4a-11eb-989b-76848cbb5f15.png)
+![Full HD](https://user-images.githubusercontent.com/57585370/107795453-7ae1fb00-6d7a-11eb-8b98-c86154149a8d.png)
 
 <div align="center">
 
