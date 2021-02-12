@@ -9,6 +9,7 @@ export interface InputProps {
   placeholderWeight: number;
   borderColor: string;
   borderFocusColor: string;
+  [name: string]: any;
 }
 
 const InputStyle = styled.input<InputProps>`
@@ -47,7 +48,8 @@ export const Input: React.FC<Partial<InputProps>> = ({
   textWeight = 400,
   placeholderWeight = 400,
   borderColor = "#e6e6e6",
-  borderFocusColor = "#79c7ff"
+  borderFocusColor = "#79c7ff",
+  ...props
 }) => {
   return <InputStyle
     type={type}
@@ -57,5 +59,6 @@ export const Input: React.FC<Partial<InputProps>> = ({
     placeholderWeight={placeholderWeight}
     borderColor={borderColor}
     borderFocusColor={borderFocusColor}
+    {...props}
   />;
 };

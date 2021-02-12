@@ -7,6 +7,7 @@ export interface ButtonProps {
   textColor: string;
   textWeight: number;
   backgroundColor: string;
+  [name: string]: any;
 }
 
 const ButtonWrapper = styled.button<Partial<ButtonProps>>`
@@ -36,14 +37,16 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
   fontSize = "18px",
   textColor = "#ffffff",
   textWeight = 400,
-  backgroundColor = "#79c7ff"
+  backgroundColor = "#79c7ff",
+  ...props
 }) => {
   return (
-    <ButtonWrapper 
+    <ButtonWrapper
       fontSize={fontSize}
       textColor={textColor}
       textWeight={textWeight}
       backgroundColor={backgroundColor}
+      {...props}
     >
       {title}
     </ButtonWrapper>
