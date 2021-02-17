@@ -16,6 +16,7 @@ const Example = () => {
 | Type | Description | Default |
 | ------------- | ------------- | ------------- |
 | title  | `string`  | `OK` |
+| fontFamily | `string` | `Roboto, Arial, serif` |
 | fontSize  | `string`  | `18px` |
 | textColor | `string` | `#ffffff` |
 | textWeight | `number` | `400` |
