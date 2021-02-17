@@ -17,6 +17,8 @@ const Example = () => {
 | ------------- | ------------- | ------------- |
 | type  | `"text"` `"password"`  | `"text"` |
 | placeholder  | `string`  | `Placeholder` |
+| fontFamily | `string` | `Roboto, Arial, serif` |
+| fontSize | `string` | `24px` |
 | textColor | `string` | `#000000` |
 | textWeight | `number` | `400` |
 | placeholderWeight | `number` | `400` |
