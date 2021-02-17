@@ -13,7 +13,7 @@ export interface InputProps {
 }
 
 const InputStyle = styled.input<InputProps>`
-  font-family: Roboto;
+  font-family: Roboto, Arial, serif;
   font-weight: ${props => props.textWeight};
   padding-bottom: 5px;
   background-color: transparent;

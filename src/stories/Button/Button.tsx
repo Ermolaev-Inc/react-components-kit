@@ -11,7 +11,7 @@ export interface ButtonProps {
 }
 
 const ButtonWrapper = styled.button<Partial<ButtonProps>>`
-  font-family: Roboto;
+  font-family: Roboto, Arial, serif;
   font-size: ${props => props.fontSize};
   background-color: ${props => props.backgroundColor};
   border: 0;
