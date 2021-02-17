@@ -26,6 +26,32 @@ export const Home: React.FC = () => {
 };
 ```
 
+## Themes Config
+If your application has themes, 
+you can use the Themes Config feature 
+built into react-components-kit <br>
+Check out the [documentation](soon) about Themes Config
+``` tsx
+import React from "react";
+import { Button, ButtonThemeConfig } from "erck";
+
+export const Home: React.FC = () => {
+  const buttonTheme: ButtonThemeConfig = {
+    light: {
+      backgroundColor: "red",
+      textColor: "white"
+    },
+    dark: {
+      backgroundColor: "blue"
+    }
+  };
+  
+  return (
+    <Button themeConfig={buttonTheme} currentTheme={localStorage.getItem("theme")} />
+  );    
+};
+```
+
 ## Documentation
 Soon
 
