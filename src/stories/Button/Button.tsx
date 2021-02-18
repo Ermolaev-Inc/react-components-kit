@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+export interface ButtonThemeConfig {
+  [themeTitle: string]: Partial<ButtonProps>;
+}
+
 export interface ButtonProps {
+  themeConfig: ButtonThemeConfig;
+  currentTheme: keyof Omit<ButtonThemeConfig, "currentTheme">;
   title: string;
   fontFamily: string;
   fontSize: string;
@@ -34,6 +40,8 @@ const ButtonWrapper = styled.button<Partial<ButtonProps>>`
 `;
 
 export const Button: React.FC<Partial<ButtonProps>> = ({
+  themeConfig,
+  currentTheme,
   title = "OK",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
@@ -42,6 +50,25 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
   backgroundColor = "#79c7ff",
   ...props
 }) => {
+  if (themeConfig) {
+    themeConfig["NOTHEME"] = {
+      fontSize: fontSize,
+      textColor: textColor,
+      textWeight: textWeight,
+      backgroundColor: backgroundColor,
+    };
+  }
+  if (!themeConfig) {
+    themeConfig = {
+      NOTHEME: {
+        fontSize: fontSize,
+        textColor: textColor,
+        textWeight: textWeight,
+        backgroundColor: backgroundColor,
+      }
+    };
+  }
+
   return (
     <ButtonWrapper
       fontFamily={fontFamily}
