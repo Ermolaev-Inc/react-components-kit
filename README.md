@@ -3,6 +3,7 @@
 <div align="center">
   
 ![Downloads](https://img.shields.io/npm/dm/erck?style=for-the-badge)
+![GHVersion](https://img.shields.io/github/v/release/Ermolaev-Inc/react-components-kit?style=for-the-badge)
 ![Version](https://img.shields.io/npm/v/erck?style=for-the-badge)
 ![License](https://img.shields.io/npm/l/erck?style=for-the-badge)
 </div>
@@ -58,6 +59,7 @@ Soon
 ## Components
 - [Input](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Input)
 - [Button](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Button)
+- [TextButton](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/TextButton)
 
 ## License
 This project is licensed under the terms of the [MIT license](https://github.com/Ermolaev-Inc/react-components-kit/blob/master/LICENSE)

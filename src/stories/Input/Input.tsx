@@ -4,6 +4,8 @@ import styled from "styled-components";
 export interface InputProps {
   type: "text" | "password";
   placeholder: string;
+  fontFamily: string;
+  fontSize: string;
   textColor: string;
   textWeight: number;
   placeholderWeight: number;
@@ -13,7 +15,7 @@ export interface InputProps {
 }
 
 const InputStyle = styled.input<InputProps>`
-  font-family: Roboto;
+  font-family: ${props => props.fontFamily};
   font-weight: ${props => props.textWeight};
   padding-bottom: 5px;
   background-color: transparent;
@@ -27,7 +29,7 @@ const InputStyle = styled.input<InputProps>`
   margin-bottom: 5%;
   outline: none;
   color: ${props => props.textColor};
-  font-size: 24px;
+  font-size: ${props => props.fontSize};
   ::placeholder {
     color: ${props => props.borderColor};
     font-size: 24px;
@@ -44,6 +46,8 @@ const InputStyle = styled.input<InputProps>`
 export const Input: React.FC<Partial<InputProps>> = ({
   type = "text",
   placeholder = "Placeholder",
+  fontFamily = "Roboto, Arial, serif",
+  fontSize = "24px",
   textColor = "#000000",
   textWeight = 400,
   placeholderWeight = 400,
@@ -54,6 +58,8 @@ export const Input: React.FC<Partial<InputProps>> = ({
   return <InputStyle
     type={type}
     placeholder={placeholder}
+    fontFamily={fontFamily}
+    fontSize={fontSize}
     textColor={textColor}
     textWeight={textWeight}
     placeholderWeight={placeholderWeight}

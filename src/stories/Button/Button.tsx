@@ -9,6 +9,7 @@ export interface ButtonProps {
   themeConfig: ButtonThemeConfig;
   currentTheme: keyof Omit<ButtonThemeConfig, "currentTheme">;
   title: string;
+  fontFamily: string;
   fontSize: string;
   textColor: string;
   textWeight: number;
@@ -17,7 +18,7 @@ export interface ButtonProps {
 }
 
 const ButtonWrapper = styled.button<Partial<ButtonProps>>`
-  font-family: Roboto;
+  font-family: ${props => props.fontFamily};
   font-size: ${props => props.fontSize};
   background-color: ${props => props.backgroundColor};
   border: 0;
@@ -42,6 +43,7 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
   themeConfig,
   currentTheme,
   title = "OK",
+  fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
   textColor = "#ffffff",
   textWeight = 400,
@@ -69,7 +71,11 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
 
   return (
     <ButtonWrapper
-      {...themeConfig[currentTheme ? currentTheme : "NOTHEME"]}
+      fontFamily={fontFamily}
+      fontSize={fontSize}
+      textColor={textColor}
+      textWeight={textWeight}
+      backgroundColor={backgroundColor}
       {...props}
     >
       {title}
