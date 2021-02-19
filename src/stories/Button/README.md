@@ -62,6 +62,7 @@ const Example = () => {
 1. Import Button and ButtonThemes from erck
 
 ``import { Button, ButtonThemes } from "erck";``
+
 2. Create an object that will store your themes. The type of this object must be `ButtonThemes`
 
 ``` tsx
