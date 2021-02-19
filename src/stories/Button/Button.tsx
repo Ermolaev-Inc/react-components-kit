@@ -18,7 +18,7 @@ export type UserProps = {
 }
 
 export interface ButtonThemesConfig {
-  themeConfig: ButtonThemes;
+  themesConfig: ButtonThemes;
   currentTheme: keyof ButtonThemes;
 }
 
@@ -58,11 +58,11 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
   textWeight = 400,
   backgroundColor = "#79c7ff",
   currentTheme,
-  themeConfig,
+  themesConfig,
   ...props
 }) => {
-  if (!themeConfig || !currentTheme || !themeConfig[currentTheme]) {
-    themeConfig = {
+  if (!themesConfig || !currentTheme || !themesConfig[currentTheme]) {
+    themesConfig = {
       NOTHEME: {
         fontFamily: fontFamily,
         fontSize: fontSize,
@@ -75,7 +75,7 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
 
   return (
     <ButtonWrapper
-      {...themeConfig[currentTheme ? currentTheme : "NOTHEME"]}
+      {...themesConfig[currentTheme ? currentTheme : "NOTHEME"]}
       {...props}
     >
       {title}

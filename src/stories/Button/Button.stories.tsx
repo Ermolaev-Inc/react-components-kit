@@ -22,6 +22,6 @@ const buttonConfig: ButtonThemes = {
 };
 export const WithConfig = Template.bind({});
 WithConfig.args = {
-  themeConfig: buttonConfig,
+  themesConfig: buttonConfig,
   currentTheme: "light"
 };
