@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { Button, ButtonProps, ButtonThemeConfig } from "./Button";
+import { Button, ButtonProps, ButtonThemes } from "./Button";
 
 export default {
   title: "Button",
@@ -12,7 +12,7 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {};
 
-const buttonConfig: ButtonThemeConfig = {
+const buttonConfig: ButtonThemes = {
   light: {
     backgroundColor: "red"
   },

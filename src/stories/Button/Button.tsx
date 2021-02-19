@@ -1,23 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 
-export interface ButtonThemeConfig {
-  [themeTitle: string]: Partial<ButtonProps>;
+export type ButtonTitle = {
+  title: string;
+};
+
+export type ButtonStyles = {
+  fontFamily?: string;
+  fontSize?: string;
+  textColor?: string;
+  textWeight?: number;
+  backgroundColor?: string;
 }
 
-export interface ButtonProps {
-  themeConfig: ButtonThemeConfig;
-  currentTheme: keyof Omit<ButtonThemeConfig, "currentTheme">;
-  title: string;
-  fontFamily: string;
-  fontSize: string;
-  textColor: string;
-  textWeight: number;
-  backgroundColor: string;
+export type UserProps = {
   [name: string]: any;
 }
 
-const ButtonWrapper = styled.button<Partial<ButtonProps>>`
+export interface ButtonThemesConfig {
+  themeConfig: ButtonThemes;
+  currentTheme: keyof ButtonThemes;
+}
+
+export type ButtonThemes = {
+  [themeTitle: string]: ButtonStyles;
+}
+
+export type ButtonProps = ButtonTitle & ButtonStyles & UserProps & ButtonThemesConfig;
+
+const ButtonWrapper = styled.button<ButtonStyles>`
   font-family: ${props => props.fontFamily};
   font-size: ${props => props.fontSize};
   background-color: ${props => props.backgroundColor};
@@ -40,27 +51,20 @@ const ButtonWrapper = styled.button<Partial<ButtonProps>>`
 `;
 
 export const Button: React.FC<Partial<ButtonProps>> = ({
-  themeConfig,
-  currentTheme,
   title = "OK",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
   textColor = "#ffffff",
   textWeight = 400,
   backgroundColor = "#79c7ff",
+  currentTheme,
+  themeConfig,
   ...props
 }) => {
-  if (themeConfig) {
-    themeConfig["NOTHEME"] = {
-      fontSize: fontSize,
-      textColor: textColor,
-      textWeight: textWeight,
-      backgroundColor: backgroundColor,
-    };
-  }
-  if (!themeConfig) {
+  if (!themeConfig || !currentTheme || !themeConfig[currentTheme]) {
     themeConfig = {
       NOTHEME: {
+        fontFamily: fontFamily,
         fontSize: fontSize,
         textColor: textColor,
         textWeight: textWeight,
@@ -71,11 +75,7 @@ export const Button: React.FC<Partial<ButtonProps>> = ({
 
   return (
     <ButtonWrapper
-      fontFamily={fontFamily}
-      fontSize={fontSize}
-      textColor={textColor}
-      textWeight={textWeight}
-      backgroundColor={backgroundColor}
+      {...themeConfig[currentTheme ? currentTheme : "NOTHEME"]}
       {...props}
     >
       {title}
