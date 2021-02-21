@@ -1,17 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export interface ButtonProps {
-  title: string;
-  fontFamily: string;
-  fontSize: string;
-  textColor: string;
-  textWeight: number;
-  backgroundColor: string;
-  [name: string]: any;
-}
+import { ButtonRectProps } from "../Button";
 
-const ButtonWrapper = styled.button<Partial<ButtonProps>>`
+const ButtonWrapper = styled.button<Partial<ButtonRectProps>>`
   font-family: ${props => props.fontFamily};
   font-size: ${props => props.fontSize};
   background-color: ${props => props.backgroundColor};
@@ -33,7 +25,7 @@ const ButtonWrapper = styled.button<Partial<ButtonProps>>`
   }
 `;
 
-export const Button: React.FC<Partial<ButtonProps>> = ({
+export const ButtonRect: React.FC<Partial<ButtonRectProps>> = ({
   title = "OK",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
