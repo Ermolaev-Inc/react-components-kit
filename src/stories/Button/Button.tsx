@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export interface ButtonProps {
   title: string;
+  type: "rect" | "round";
   fontFamily: string;
   fontSize: string;
   textColor: string;
@@ -25,7 +26,7 @@ const ButtonWrapper = styled.button<Partial<ButtonProps>>`
   cursor: pointer;
   outline: none;
   :hover {
-    box-shadow: 0 0 20px ${props => props.backgroundColor}, 0 0 10px ${props => props.backgroundColor}, 0 0 50px ${props => props.backgroundColor};
+    box-shadow: 0 0 15px 5px ${props => props.backgroundColor};
   }
   :active {
     transition: 0.07s;
@@ -35,6 +36,7 @@ const ButtonWrapper = styled.button<Partial<ButtonProps>>`
 
 export const Button: React.FC<Partial<ButtonProps>> = ({
   title = "OK",
+  type = "rect",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
   textColor = "#ffffff",
