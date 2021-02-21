@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export interface ButtonProps {
   title: string;
-  type: "rect" | "round";
   fontFamily: string;
   fontSize: string;
   textColor: string;
@@ -36,7 +35,6 @@ const ButtonWrapper = styled.button<Partial<ButtonProps>>`
 
 export const Button: React.FC<Partial<ButtonProps>> = ({
   title = "OK",
-  type = "rect",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
   textColor = "#ffffff",
