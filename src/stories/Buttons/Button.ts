@@ -1,23 +1,23 @@
-export type ButtonTitle = {
+type ButtonTitle = {
   title: string;
 };
 
-export type UserProps = {
+type UserProps = {
   [name: string]: any;
 }
 
-export interface ButtonStyles {
+interface ButtonStyles {
   fontFamily?: string;
   fontSize?: string;
   textColor?: string;
   textWeight?: number;
 }
 
-export interface ButtonRectStyles extends ButtonStyles {
+interface ButtonRectStyles extends ButtonStyles {
   backgroundColor?: string;
 }
 
-export interface ButtonRoundStyles extends ButtonRectStyles {
+interface ButtonRoundStyles extends ButtonRectStyles {
   diameter: string;
 }
 
