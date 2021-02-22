@@ -1,7 +1,7 @@
 <div align="center">
   
 # Unstable Version 
-![Full HD](https://user-images.githubusercontent.com/57585370/107795453-7ae1fb00-6d7a-11eb-8b98-c86154149a8d.png)
+![Full HD](https://user-images.githubusercontent.com/57585370/108734031-d9646180-7550-11eb-8c51-9b85a9021e31.png)
 
 ![GHVersion](https://img.shields.io/github/v/release/Ermolaev-Inc/react-components-kit?include_prereleases)
 ![Lint](https://github.com/Ermolaev-Inc/react-components-kit/actions/workflows/lint.yml/badge.svg)
