@@ -6,7 +6,7 @@ export interface InputStyles {
   type: "text" | "password";
   placeholder: string;
   placeholderColor: string;
-  placeholderWeight: string;
+  placeholderWeight: number;
   fontFamily: string;
   fontSize: string;
   textColor: string;
