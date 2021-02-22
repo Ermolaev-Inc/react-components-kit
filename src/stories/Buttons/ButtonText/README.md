@@ -1,12 +1,12 @@
-## TextButton
+## ButtonText
 **All attributes are optional**
 ```tsx
 import React from "react";
-import { TextButton } from "erck";
+import { ButtonText } from "erck";
 
 const Example = () => {
   return (
-    <TextButton 
+    <ButtonText 
       title="Home"
       fontSize="14px"
     />
