@@ -1,22 +1,27 @@
 import styled from "styled-components";
-import { ButtonRectProps, ButtonRoundProps } from "./Button";
+import { 
+  ButtonStyles, 
+  ButtonRectStyles, 
+  ButtonRoundStyles 
+} from "./Button";
 
-export const ButtonRectWrapper = styled.button<ButtonRectProps>`
+export const ButtonWrapper = styled.button<ButtonStyles>`
   font-family: ${props => props.fontFamily};
   font-size: ${props => props.fontSize};
-  background-color: ${props => props.backgroundColor};
-  border: 0;
   color: ${props => props.textColor};
   font-weight: ${props => props.textWeight};
-  border-radius: 10px;
+  border: 0;
   text-decoration: none;
-  transition: 0.4s;
   padding: 15px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
   outline: none;
+  background-color: transparent;
+`;
+
+export const ButtonRectWrapper = styled(ButtonWrapper)<ButtonRectStyles>`
+  cursor: pointer;
+  background-color: ${props => props.backgroundColor};
+  border-radius: 10px;
+  transition: 0.4s;
   :hover {
     box-shadow: 0 0 15px 5px ${props => props.backgroundColor};
   }
@@ -26,7 +31,10 @@ export const ButtonRectWrapper = styled.button<ButtonRectProps>`
   }
 `;
 
-export const ButtonRoundWrapper = styled(ButtonRectWrapper)<ButtonRoundProps>`
+export const ButtonRoundWrapper = styled(ButtonRectWrapper)<ButtonRoundStyles>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   padding: 30px 30px;
   width: ${props => props.diameter};
