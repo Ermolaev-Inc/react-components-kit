@@ -1,12 +1,12 @@
-## Button
+## ButtonRect
 **All attributes are optional**
 ```tsx
 import React from "react";
-import { Button } from "erck";
+import { ButtonRect } from "erck";
 
 const Example = () => {
   return (
-    <Button 
+    <ButtonRect 
       title="Confirm"
       backgroundColor="#9CEE90"
     />
