@@ -27,6 +27,10 @@ export const Home: React.FC = () => {
 };
 ```
 
+## React Components Kit Next
+- [React Components Kit 2 Alpha (Unstable)](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0)
+- [Themes Config](https://github.com/Ermolaev-Inc/react-components-kit/tree/themes-config)
+
 ## Documentation
 Soon
 
