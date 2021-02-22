@@ -4,7 +4,7 @@ import { ButtonRoundProps } from "../Button";
 import { ButtonRoundWrapper } from "../ButtonStyles";
 
 export const ButtonRound: React.FC<Partial<ButtonRoundProps>> = ({
-  title = "1",
+  title = "OK",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
   textColor = "#ffffff",
