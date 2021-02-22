@@ -6,20 +6,21 @@ type UserProps = {
   [name: string]: any;
 }
 
-interface ButtonStyles {
+export interface ButtonStyles {
   fontFamily?: string;
   fontSize?: string;
   textColor?: string;
   textWeight?: number;
 }
 
-interface ButtonRectStyles extends ButtonStyles {
+export interface ButtonRectStyles extends ButtonStyles {
   backgroundColor?: string;
 }
 
-interface ButtonRoundStyles extends ButtonRectStyles {
+export interface ButtonRoundStyles extends ButtonRectStyles {
   diameter: string;
 }
 
-export type ButtonRectProps = ButtonStyles & UserProps & ButtonRectStyles;
-export type ButtonRoundProps = ButtonStyles & UserProps & ButtonRoundStyles;
+export type ButtonProps = ButtonTitle & UserProps & ButtonStyles
+export type ButtonRectProps = ButtonTitle & UserProps & ButtonRectStyles;
+export type ButtonRoundProps = ButtonTitle & UserProps & ButtonRoundStyles;
