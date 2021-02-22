@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { ButtonRectProps } from "../Button";
 
-const ButtonWrapper = styled.button<Partial<ButtonRectProps>>`
+const ButtonWrapper = styled.button<ButtonRectProps>`
   font-family: ${props => props.fontFamily};
   font-size: ${props => props.fontSize};
   background-color: ${props => props.backgroundColor};
@@ -12,7 +12,7 @@ const ButtonWrapper = styled.button<Partial<ButtonRectProps>>`
   font-weight: ${props => props.textWeight};
   border-radius: 10px;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.4s;
   padding: 15px 30px;
   cursor: pointer;
   outline: none;

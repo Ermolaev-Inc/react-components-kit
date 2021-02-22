@@ -4,7 +4,7 @@ import { ButtonRectProps } from "../Button";
 import { ButtonRect } from "./ButtonRect";
 
 export default {
-  title: "ButtonRect",
+  title: "Buttons/ButtonRect",
   component: ButtonRect
 } as Meta;
 
