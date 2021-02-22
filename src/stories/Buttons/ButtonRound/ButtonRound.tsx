@@ -11,8 +11,8 @@ const ButtonWrapper = styled.button<Partial<ButtonRoundProps>>`
   color: ${props => props.textColor};
   font-weight: ${props => props.textWeight};
   border-radius: 50%;
-  width: ${props => props.width};
-  height: ${props => props.height};
+  width: ${props => props.diameter};
+  height: ${props => props.diameter};
   text-decoration: none;
   transition: 0.4s;
   padding: 30px 30px;
@@ -37,8 +37,7 @@ export const ButtonRound: React.FC<Partial<ButtonRoundProps>> = ({
   textColor = "#ffffff",
   textWeight = 400,
   backgroundColor = "#79c7ff",
-  width = "40px",
-  height = "40px",
+  diameter = "40px",
   ...props
 }) => {
   return (
@@ -48,8 +47,7 @@ export const ButtonRound: React.FC<Partial<ButtonRoundProps>> = ({
       textColor={textColor}
       textWeight={textWeight}
       backgroundColor={backgroundColor}
-      width={width}
-      height={height}
+      diameter={diameter}
       {...props}
     >
       {title}

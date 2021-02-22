@@ -18,8 +18,7 @@ export interface ButtonRectStyles extends ButtonStyles {
 }
 
 export interface ButtonRoundStyles extends ButtonRectStyles {
-  width: string;
-  height: string;
+  diameter: string;
 }
 
 export type ButtonRectProps = ButtonStyles & UserProps & ButtonRectStyles;
