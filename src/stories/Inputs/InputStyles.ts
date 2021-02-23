@@ -29,3 +29,13 @@ export const InputOpenWrapper = styled(InputWrapper)<InputStyles>`
     }
   }
 `;
+
+export const InputBoxWrapper = styled(InputWrapper)<InputStyles>`
+  padding: 5px 12px;
+  border: 1px solid ${props => props.borderColor};
+  border-radius: 6px;
+  :focus {
+    border-color: ${props => props.borderFocusColor};
+    box-shadow: 0 0 0 2px ${props => props.borderShadowFocusColor || "transparent"};
+  }
+`;
