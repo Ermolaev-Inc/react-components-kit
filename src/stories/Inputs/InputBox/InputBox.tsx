@@ -1,9 +1,9 @@
 import React from "react";
 
-import { InputProps } from "../Input";
+import { InputBoxProps } from "../Input";
 import { InputBoxWrapper } from "../InputStyles";
 
-export const InputBox: React.FC<Partial<InputProps>> = ({
+export const InputBox: React.FC<Partial<InputBoxProps>> = ({
   type = "text",
   placeholder = "Placeholder",
   placeholderColor = "#E6E6E6",

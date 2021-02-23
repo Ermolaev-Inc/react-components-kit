@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { InputStyles } from "./Input";
+import { InputBoxStyles, InputStyles } from "./Input";
 
 const InputWrapper = styled.input<InputStyles>`
   font-family: ${props => props.fontFamily};
@@ -30,7 +30,7 @@ export const InputOpenWrapper = styled(InputWrapper)<InputStyles>`
   }
 `;
 
-export const InputBoxWrapper = styled(InputWrapper)<InputStyles>`
+export const InputBoxWrapper = styled(InputWrapper)<InputBoxStyles>`
   padding: 5px 12px;
   border: 1px solid ${props => props.borderColor};
   border-radius: 6px;

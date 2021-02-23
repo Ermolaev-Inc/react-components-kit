@@ -15,7 +15,11 @@ export interface InputStyles {
   height: string;
   borderColor: string;
   borderFocusColor: string;
-  borderShadowFocusColor: string;
+}
+
+export interface InputBoxStyles extends InputStyles {
+  borderShadowFocusColor: string | null;
 }
 
 export type InputProps = UserProps & InputStyles;
+export type InputBoxProps = InputProps & InputBoxStyles;
