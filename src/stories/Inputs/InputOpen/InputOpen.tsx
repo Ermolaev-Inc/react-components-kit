@@ -15,7 +15,8 @@ export const InputOpen: React.FC<Partial<InputProps>> = ({
   width = "280px",
   height = "30px",
   borderColor = "#E6E6E6",
-  borderFocusColor = "#79C7FF"
+  borderFocusColor = "#79C7FF",
+  ...props
 }) => {
   return (
     <InputOpenWrapper
@@ -31,6 +32,7 @@ export const InputOpen: React.FC<Partial<InputProps>> = ({
       height={height}
       borderColor={borderColor}
       borderFocusColor={borderFocusColor}
+      {...props}
     />
   );
 };

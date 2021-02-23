@@ -16,7 +16,8 @@ export const InputBox: React.FC<Partial<InputBoxProps>> = ({
   height = "30px",
   borderColor = "#E6E6E6",
   borderFocusColor = "#79C7FF",
-  borderShadowFocusColor = null
+  borderShadowFocusColor = null,
+  ...props
 }) => {
   return (
     <InputBoxWrapper
@@ -33,6 +34,7 @@ export const InputBox: React.FC<Partial<InputBoxProps>> = ({
       borderColor={borderColor}
       borderFocusColor={borderFocusColor}
       borderShadowFocusColor={borderShadowFocusColor}
+      {...props}
     />
   );
 };
