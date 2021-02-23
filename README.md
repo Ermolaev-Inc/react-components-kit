@@ -18,6 +18,7 @@
 
 ### [Input](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Inputs)
 - [InputOpen](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Inputs/InputOpen)
+- [InputBox](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Inputs/InputBox)
 
 ## License
 This project is licensed under the terms of the [MIT license](https://github.com/Ermolaev-Inc/react-components-kit/blob/master/LICENSE)
