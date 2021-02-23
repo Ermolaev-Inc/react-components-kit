@@ -24,4 +24,4 @@ export interface ButtonRoundStyles extends ButtonRectStyles {
 export type StandartProps = ButtonTitle & UserProps;
 export type ButtonProps = ButtonStyles & StandartProps;
 export type ButtonRectProps = ButtonRectStyles & StandartProps;
-export type ButtonRoundProps = ButtonRectStyles & ButtonRoundStyles;
+export type ButtonRoundProps = ButtonRoundStyles & StandartProps;
