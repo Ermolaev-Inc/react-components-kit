@@ -24,9 +24,6 @@ export const InputOpenWrapper = styled(InputWrapper)<InputStyles>`
   border-bottom-color: ${props => props.borderColor};
   :focus {
     border-bottom-color: ${props => props.borderFocusColor};
-    ::placeholder {
-      color: transparent;
-    }
   }
 `;
 
