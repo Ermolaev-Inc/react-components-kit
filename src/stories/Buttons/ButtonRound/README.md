@@ -1,13 +1,13 @@
-## Button
+## ButtonRound
 **All attributes are optional**
 ```tsx
 import React from "react";
-import { Button } from "erck";
+import { ButtonRound } from "erck";
 
 const Example = () => {
   return (
-    <Button 
-      title="Confirm"
+    <ButtonRound
+      title="OK"
       backgroundColor="#9CEE90"
     />
   );
@@ -16,6 +16,7 @@ const Example = () => {
 | Type | Description | Default |
 | ------------- | ------------- | ------------- |
 | title  | `string`  | `OK` |
+| diameter | `string` | `40px` |
 | fontFamily | `string` | `Roboto, Arial, serif` |
 | fontSize  | `string`  | `18px` |
 | textColor | `string` | `#ffffff` |
