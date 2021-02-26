@@ -32,23 +32,18 @@ export const Home: React.FC = () => {
   );  
 };
 ```
-
-## React Components Kit Next
-- [React Components Kit 2 Alpha (Unstable)](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0)
-- [Themes Config](https://github.com/Ermolaev-Inc/react-components-kit/tree/themes-config)
-
 ## Documentation
 Soon
 
 ## Components
-### [Button](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Buttons)
-- [ButtonRect](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Buttons/ButtonRect)
-- [ButtonRound](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Buttons/ButtonRound)
-- [ButtonText](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Buttons/ButtonText)
+### [Button](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Buttons)
+- [ButtonRect](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Buttons/ButtonRect)
+- [ButtonRound](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Buttons/ButtonRound)
+- [ButtonText](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Buttons/ButtonText)
 
-### [Input](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Inputs)
-- [InputOpen](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Inputs/InputOpen)
-- [InputBox](https://github.com/Ermolaev-Inc/react-components-kit/tree/rck-v.2.0.0/src/stories/Inputs/InputBox)
+### [Input](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Inputs)
+- [InputOpen](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Inputs/InputOpen)
+- [InputBox](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Inputs/InputBox)
 
 ## React Components Kit Next
 - [Themes Config](https://github.com/Ermolaev-Inc/react-components-kit/tree/themes-config)
