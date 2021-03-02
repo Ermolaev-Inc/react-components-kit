@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/npm/l/erck?style=for-the-badge)
 
 
-![GHVersion](https://img.shields.io/github/v/release/Ermolaev-Inc/react-components-kit?include_prereleases)
+![Prerelease](https://img.shields.io/github/v/release/Ermolaev-Inc/react-components-kit?include_prereleases&label=prerelease)
 ![Lint](https://github.com/Ermolaev-Inc/react-components-kit/actions/workflows/lint.yml/badge.svg)
 ![Build](https://github.com/Ermolaev-Inc/react-components-kit/actions/workflows/storybook-build.yml/badge.svg)
 
