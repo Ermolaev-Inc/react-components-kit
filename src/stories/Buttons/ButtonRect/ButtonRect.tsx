@@ -1,9 +1,12 @@
 import React from "react";
 
 import { ButtonRectProps } from "../Button";
-import { ButtonRectWrapper } from "../ButtonStyles";
+import { ButtonRectWrapper, SVGWrapper } from "../ButtonStyles";
 
 export const ButtonRect: React.FC<Partial<ButtonRectProps>> = ({
+  svg = null,
+  svgWidth = "40px",
+  svgHeight = "20px",
   title = "OK",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
@@ -21,7 +24,7 @@ export const ButtonRect: React.FC<Partial<ButtonRectProps>> = ({
       backgroundColor={backgroundColor}
       {...props}
     >
-      {title}
+      {svg ? <SVGWrapper src={svg} svgWidth={svgWidth} svgHeight={svgHeight} /> : title}
     </ButtonRectWrapper>
   );
 };
