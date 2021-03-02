@@ -51,4 +51,4 @@ const Example = () => {
 | ------------- | ------------- | ------------- |
 | svg | `string` | `null` |
 | svgWidth | `string` | `40px` |
-| svhHeight | `string` | `20px` |
+| svgHeight | `string` | `20px` |
