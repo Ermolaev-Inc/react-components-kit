@@ -1,9 +1,12 @@
 import React from "react";
 
 import { ButtonRoundProps } from "../Button";
-import { ButtonRoundWrapper } from "../ButtonStyles";
+import { ButtonRoundWrapper, SVGWrapper } from "../ButtonStyles";
 
 export const ButtonRound: React.FC<Partial<ButtonRoundProps>> = ({
+  svg = null,
+  svgWidth = "20px",
+  svgHeight = "20px",
   title = "OK",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
@@ -23,7 +26,7 @@ export const ButtonRound: React.FC<Partial<ButtonRoundProps>> = ({
       diameter={diameter}
       {...props}
     >
-      {title}
+      {svg ? <SVGWrapper src={svg} svgWidth={svgWidth} svgHeight={svgHeight} /> : title}
     </ButtonRoundWrapper>
   );
 };
