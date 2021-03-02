@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { 
   ButtonStyles, 
   ButtonRectStyles, 
-  ButtonRoundStyles 
+  ButtonRoundStyles, 
+  SVGIcon
 } from "./Button";
 
 export const ButtonWrapper = styled.button<ButtonStyles>`
@@ -39,4 +40,9 @@ export const ButtonRoundWrapper = styled(ButtonRectWrapper)<ButtonRoundStyles>`
   padding: 30px 30px;
   width: ${props => props.diameter};
   height: ${props => props.diameter};
+`;
+
+export const SVGWrapper = styled.img<SVGIcon>`
+  width: ${props => props.svgWidth};
+  height: ${props => props.svgHeight};
 `;
