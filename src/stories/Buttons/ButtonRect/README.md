@@ -27,6 +27,7 @@ const Example = () => {
 | svgWidth | `string` | `40px` |
 | svhHeight | `string` | `20px` |
 <br>
+
 ## With SVG icon
 ```tsx
 import React from "react";
