@@ -7,20 +7,20 @@ type UserProps = {
 }
 
 export type SVGIcon = {
-  svg?: string;
-  svgWidth?: string;
-  svgHeight?: string;
+  svg: string;
+  svgWidth: string;
+  svgHeight: string;
 }
 
 export interface ButtonStyles {
-  fontFamily?: string;
-  fontSize?: string;
-  textColor?: string;
-  textWeight?: number;
+  fontFamily: string;
+  fontSize: string;
+  textColor: string;
+  textWeight: number;
 }
 
 export interface ButtonRectStyles extends ButtonStyles {
-  backgroundColor?: string;
+  backgroundColor: string;
 }
 
 export interface ButtonRoundStyles extends ButtonRectStyles {

@@ -42,7 +42,7 @@ export const ButtonRoundWrapper = styled(ButtonRectWrapper)<ButtonRoundStyles>`
   height: ${props => props.diameter};
 `;
 
-export const SVGWrapper = styled.img<SVGIcon>`
+export const SVGWrapper = styled.img<Partial<SVGIcon>>`
   width: ${props => props.svgWidth};
   height: ${props => props.svgHeight};
 `;
