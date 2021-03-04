@@ -25,7 +25,7 @@ const Example = () => {
 | backgroundColor | `string` | `#79c7ff` |
 | svg | `string` | `null` |
 | svgWidth | `string` | `40px` |
-| svhHeight | `string` | `20px` |
+| svgHeight | `string` | `20px` |
 <br>
 
 ## With SVG icon
