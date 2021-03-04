@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { ButtonProps } from "../Button";
-import { ButtonWrapper } from "../ButtonStyles";
+import { ButtonWrapper, SVGWrapper } from "../ButtonStyles";
 
 const TextButtonTitle = styled.span`
   cursor: pointer;
@@ -13,6 +13,9 @@ const TextButtonTitle = styled.span`
 `;
 
 export const ButtonText: React.FC<Partial<ButtonProps>> = ({
+  svg = null,
+  svgWidth = "40px",
+  svgHeight = "20px",
   title = "Button",
   fontFamily = "Roboto, Arial, serif",
   fontSize = "18px",
@@ -29,7 +32,7 @@ export const ButtonText: React.FC<Partial<ButtonProps>> = ({
       {...props}
     >
       <TextButtonTitle>
-        {title}
+        {svg ? <SVGWrapper src={svg} svgWidth={svgWidth} svgHeight={svgHeight} /> : title}
       </TextButtonTitle>
     </ButtonWrapper>
   );
