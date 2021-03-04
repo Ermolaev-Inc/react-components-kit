@@ -32,13 +32,13 @@ const Example = () => {
 ## With SVG icon
 ```tsx
 import React from "react";
-import { ButtonRect } from "erck";
+import { ButtonRound } from "erck";
 
 import confirmIcon from "../../img/confirm.svg";
 
 const Example = () => {
   return (
-    <ButtonRect 
+    <ButtonRound 
       svg={confirmIcon}
       backgroundColor="#9CEE90"
     />
