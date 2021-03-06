@@ -1,5 +1,4 @@
 # ButtonText
-**All attributes are optional**
 ## Usage
 ```tsx
 import React from "react";
@@ -15,6 +14,7 @@ const Example = () => {
 };
 ```
 ## All Attributes 
+**All attributes are optional**
 | Type | Description | Default |
 | ------------- | ------------- | ------------- |
 | title  | `string`  | `OK` |
