@@ -1,16 +1,10 @@
-type UserProps = {
-  [name: string]: any;
-}
+import { UserProps, TextStyles } from "../../Interfaces";
 
-export interface InputStyles {
+export type InputStyles = TextStyles & {
   type: "text" | "password";
   placeholder: string;
   placeholderColor: string;
   placeholderWeight: number;
-  fontFamily: string;
-  fontSize: string;
-  textColor: string;
-  textWeight: number;
   width: string;
   height: string;
   borderColor: string;

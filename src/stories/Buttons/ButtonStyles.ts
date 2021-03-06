@@ -1,12 +1,12 @@
 import styled from "styled-components";
+import { TextStyles } from "../../Interfaces";
 import { 
-  ButtonStyles, 
   ButtonRectStyles, 
   ButtonRoundStyles, 
   SVGIcon
 } from "./Button";
 
-export const ButtonWrapper = styled.button<ButtonStyles>`
+export const ButtonWrapper = styled.button<TextStyles>`
   font-family: ${props => props.fontFamily};
   font-size: ${props => props.fontSize};
   color: ${props => props.textColor};

@@ -1,10 +1,8 @@
+import { UserProps, TextStyles } from "../../Interfaces";
+
 type ButtonTitle = {
   title: string;
 };
-
-type UserProps = {
-  [name: string]: any;
-}
 
 export type SVGIcon = {
   svg: string;
@@ -12,22 +10,15 @@ export type SVGIcon = {
   svgHeight: string;
 }
 
-export interface ButtonStyles {
-  fontFamily: string;
-  fontSize: string;
-  textColor: string;
-  textWeight: number;
-}
-
-export interface ButtonRectStyles extends ButtonStyles {
+export type ButtonRectStyles = TextStyles & {
   backgroundColor: string;
-}
+};
 
 export interface ButtonRoundStyles extends ButtonRectStyles {
   diameter: string;
 }
 
-export type StandartProps = ButtonTitle & UserProps & SVGIcon;
-export type ButtonProps = ButtonStyles & StandartProps;
+export type StandartProps = ButtonTitle & UserProps & SVGIcon & TextStyles;
+export type ButtonProps = StandartProps;
 export type ButtonRectProps = ButtonRectStyles & StandartProps;
 export type ButtonRoundProps = ButtonRoundStyles & StandartProps;
