@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TextStyles } from "../../Interfaces";
+import { TextStyles } from "../Interfaces";
 import { 
   ButtonRectStyles, 
   ButtonRoundStyles, 

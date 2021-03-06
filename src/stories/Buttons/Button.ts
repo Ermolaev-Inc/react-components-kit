@@ -1,4 +1,4 @@
-import { UserProps, TextStyles } from "../../Interfaces";
+import { UserProps, TextStyles } from "../Interfaces";
 
 type ButtonTitle = {
   title: string;
