@@ -1,5 +1,5 @@
 ## InputOpen
-**All attributes are optional**
+## Usage
 ```tsx
 import React from "react";
 import { InputOpen } from "erck";
@@ -13,6 +13,8 @@ const Example = () => {
   );
 };
 ```
+## All Attributes 
+**All attributes are optional**
 | Type | Description | Default |
 | ------------- | ------------- | ------------- |
 | type  | `"text", "password"`  | `"text"` |

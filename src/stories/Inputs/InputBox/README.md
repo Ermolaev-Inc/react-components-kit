@@ -1,5 +1,5 @@
-## InputBox
-**All attributes are optional**
+# InputBox
+## Usage
 ```tsx
 import React from "react";
 import { InputBox } from "erck";
@@ -15,6 +15,8 @@ const Example = () => {
   );
 };
 ```
+## All Attributes 
+**All attributes are optional**
 | Type | Description | Default |
 | ------------- | ------------- | ------------- |
 | type  | `"text", "password"`  | `"text"` |
