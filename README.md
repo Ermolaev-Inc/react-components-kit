@@ -45,6 +45,9 @@ Soon
 - [InputOpen](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Inputs/InputOpen)
 - [InputBox](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Inputs/InputBox)
 
+### [Navbars](https://github.com/Ermolaev-Inc/react-components-kit/tree/navbar-component/src/stories/Navbars)
+- [NavbarSimple](https://github.com/Ermolaev-Inc/react-components-kit/tree/navbar-component/src/stories/Navbars/NavbarSimple)
+
 ## React Components Kit Next
 - [Themes Config](https://github.com/Ermolaev-Inc/react-components-kit/tree/themes-config)
 
