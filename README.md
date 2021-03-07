@@ -46,6 +46,7 @@ Soon
 - [InputBox](https://github.com/Ermolaev-Inc/react-components-kit/tree/master/src/stories/Inputs/InputBox)
 
 ## React Components Kit Next
+- [Navbars](https://github.com/Ermolaev-Inc/react-components-kit/tree/navbar-component)
 - [Themes Config](https://github.com/Ermolaev-Inc/react-components-kit/tree/themes-config)
 
 ## License
