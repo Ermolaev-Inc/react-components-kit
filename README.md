@@ -47,6 +47,7 @@ Soon
 
 ### [Navbars](https://github.com/Ermolaev-Inc/react-components-kit/tree/navbar-component/src/stories/Navbars)
 - [NavbarSimple](https://github.com/Ermolaev-Inc/react-components-kit/tree/navbar-component/src/stories/Navbars/NavbarSimple)
+- [NavbarStandart](https://github.com/Ermolaev-Inc/react-components-kit/tree/navbar-component/src/stories/Navbars/NavbarStandart)
 
 ## React Components Kit Next
 - [Themes Config](https://github.com/Ermolaev-Inc/react-components-kit/tree/themes-config)
