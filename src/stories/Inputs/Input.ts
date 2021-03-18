@@ -1,6 +1,6 @@
-import { UserProps, TextStyles } from "../Interfaces";
+import { UserProps, FontStyle } from "../Interfaces";
 
-export type InputStyles = TextStyles & {
+export type InputStyles = FontStyle & {
   type: "text" | "password";
   placeholder: string;
   placeholderColor: string;

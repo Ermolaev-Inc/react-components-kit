@@ -2,7 +2,7 @@ export type UserProps = {
   [name: string]: any;
 }
 
-export interface TextStyles {
+export interface FontStyle {
   fontFamily: string;
   fontSize: string;
   textColor: string;
