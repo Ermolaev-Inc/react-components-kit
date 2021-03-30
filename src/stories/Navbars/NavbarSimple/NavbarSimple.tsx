@@ -1,18 +1,21 @@
 import React from "react";
-import { NavbarSimpleProps } from "../Navbar";
-import { NavbarWrapper } from "../NavbarStyles";
 
-export const NavbarSimple: React.FC<Partial<NavbarSimpleProps>> = ({ 
+import { NavbarSimpleProps } from "../Navbar";
+import { NavbarSimpleWrapper } from "../NavbarStyles";
+
+export const NavbarSimple: React.FC<Partial<NavbarSimpleProps>> = ({
   children,
   backgroundColor = "transparent",
-  justifyContent = "center"
+  textColor = "#000000",
+  ...props
 }) => {
   return (
-    <NavbarWrapper 
+    <NavbarSimpleWrapper
       backgroundColor={backgroundColor}
-      justifyContent={justifyContent}
+      textColor={textColor}
+      {...props}
     >
       {children}
-    </NavbarWrapper>
+    </NavbarSimpleWrapper>
   );
 };
