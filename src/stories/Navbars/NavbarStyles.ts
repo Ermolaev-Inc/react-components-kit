@@ -24,15 +24,13 @@ export const NavbarSimpleElementTitle = styled.span`
   }
 `;
 
-// export const NavbarStandartStyles = styled.div<NavbarStyles>`
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-//   background-color: ${props => props.backgroundColor};
-// `;
-//
-// export const NavbarStandartButtonsStyles = styled.div<NavbarStandartButtons>`
-//   flex-basis: ${props => props.flexBasis};
-//   display: flex;
-//   justify-content: center;
-// `;
+export const NavbarSearchIconWrapper = styled.svg`
+  width: 18px;
+  height: 18px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  :hover {
+    opacity: 50%;
+  }
+`;
